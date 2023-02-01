@@ -1,3 +1,4 @@
+
 <?php
 //Script to activate php warnings
 ini_set('display_errors', 1);
