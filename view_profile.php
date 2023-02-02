@@ -51,7 +51,7 @@
                             <input type="text" name="city" value="' . $row['city'] . '" disabled> 
                             <input type="text" name="degree" value="' . $row['degree'] . '" disabled>  
                         </div>
-                        <div class"form-group">
+                        <div class="form-group">
                             <span class="text-muted">Education level:</span>
                         </div>
                         <div class="form-group radio-group">
@@ -85,7 +85,7 @@
                             <span class="text-muted">Year</span> 
                             <input type="number" name="year" value="' . $row['year'] . '" disabled>  
                         </div>
-                        <div class"form-group">
+                        <div class="form-group">
                             <span class="text-muted">English Level</span>
                         </div>
                         <div class="form-group radio-group">

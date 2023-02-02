@@ -77,9 +77,9 @@
             <div class="col-md-6"> 
                 <div class="card"> 
                     <form action="' . $_SERVER['PHP_SELF'] . '" method="POST" class="box">
-                    <div class="form-group">
-                        <p class="text-muted"> '; if(isset( $e )){ echo $e;} echo ' </p> 
-                    </div>
+                        <div class="form-group">
+                            <p class="text-muted"> '; if(isset( $e )){ echo $e;} echo ' </p> 
+                        </div>
                         <div class="form-group">
                             <input type="text" name="user_username" value="' . $row['user_username'] . '"> 
                             <input type="text" name="user_pass" value="' . $row['user_pass'] . '"> 
@@ -95,7 +95,7 @@
                             <input type="text" name="city" value="' . $row['city'] . '"> 
                             <input type="text" name="degree" value="' . $row['degree'] . '">  
                         </div>
-                        <div class"form-group">
+                        <div class="form-group">
                             <span class="text-muted">Education level:</span>
                         </div>
                         <div class="form-group radio-group">
@@ -129,7 +129,7 @@
                             <span class="text-muted">Year</span> 
                             <input type="number" name="year" value="' . $row['year'] . '">  
                         </div>
-                        <div class"form-group">
+                        <div class="form-group">
                             <span class="text-muted">English Level</span>
                         </div>
                         <div class="form-group radio-group">
