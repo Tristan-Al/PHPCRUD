@@ -10,16 +10,16 @@
 <div class="navbar">
     
     <?php
-    if ($_SERVER['PHP_SELF'] == '/PHPCRUD2/index.php' ) {//SI ESTOY EN VIEW.PHP MUESTRO
+    if ($_SERVER['PHP_SELF'] == '/PHPCRUD/index.php' ) {//SI ESTOY EN VIEW.PHP MUESTRO
 
         echo '<a href="view_profile.php" >View Profile</a>
         <a href="edit_profile.php" >Edit Profile</a>';
 
-    } else if ($_SERVER['PHP_SELF'] == '/PHPCRUD2/edit_profile.php' ){//SI ESTOY EN EDITPROFILE MUESTRO OTRA COSA
+    } else if ($_SERVER['PHP_SELF'] == '/PHPCRUD/edit_profile.php' ){//SI ESTOY EN EDITPROFILE MUESTRO OTRA COSA
         
         echo '<a href="view_profile.php" >View Profile</a>';
 
-    } else if ($_SERVER['PHP_SELF'] == '/PHPCRUD2/view_profile.php' ){//SI ESTOY EN EDITPROFILE MUESTRO OTRA COSA
+    } else if ($_SERVER['PHP_SELF'] == '/PHPCRUD/view_profile.php' ){//SI ESTOY EN EDITPROFILE MUESTRO OTRA COSA
         
         echo '<a href="edit_profile.php" >Edit Profile</a>';
 

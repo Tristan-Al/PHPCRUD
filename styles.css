@@ -42,13 +42,20 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
+  .radio-group{
+    padding: 10px;
+  }
+  .radio-group label{
+    margin-right: 10px;
+  }
   .form-group span{
     text-align: right;
+    margin: auto 0;
   }
 
   .box input[type="text"],
-  .box input[type="password"] {
+  .box input[type="password"]{
     border: 0;
     background: none;
     display: block;

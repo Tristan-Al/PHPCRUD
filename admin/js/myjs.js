@@ -87,7 +87,7 @@ window.onload=function(){
         // cerrar la ventana modal
         $("#warning").modal("hide");
         // redirigir al script correspondiente mandando el id por la url
-        window.location.replace('admitir.php?id='+id);
+        window.location.replace('admitir.php?user_id='+id);
     });
     
     /*·······················································································

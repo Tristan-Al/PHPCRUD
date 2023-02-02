@@ -85,13 +85,40 @@ if (isset($_POST['submit'])) {
                 <input type="text" name="address" placeholder="Address"> 
                 <input type="text" name="postcode" placeholder="Post code"> 
                 <input type="text" name="city" placeholder="City"> 
-                <span class="text-muted">Education level  (0-9)</span>
-                <input type="number" name="edulevel" max="9" min="0">
+                <span class="text-muted">Education level</span> <br><br>
+                <input type="radio" id="primary" name="edulevel" value="0" checked>
+                    <label class="text-muted" for="primary">Primary</label>
+
+                <input type="radio" id="secondary" name="edulevel" value="1">
+                    <label class="text-muted" for="secondary">Secondary</label>
+
+                <input type="radio" id="baccalaureate" name="edulevel" value="2">
+                    <label class="text-muted" for="baccalaureate">Baccalaureate</label>
+
+                <input type="radio" id="higher" name="edulevel" value="3">
+                    <label class="text-muted" for="higher">Higher Vocational Training</label>
+
+                <input type="radio" id="degree" name="edulevel" value="4">
+                    <label class="text-muted" for="degree">Degree</label>
+
                 <input type="text" name="degree" placeholder="Degree">
+
                 <span class="text-muted">Year</span>
-                <input type="number" name="year" min="1902" max="2022">                
-                <span class="text-muted">Lang Level (0-3)</span>
-                <input type="number" name="langlevel" max="3" min="0"> 
+                <input type="number" name="year" min="1902" max="2022"> <br><br>              
+                <span class="text-muted">Lang Level</span>
+                
+                <input type="radio" id="Low" name="langlevel" value="0" checked>
+                    <label class="text-muted" for="primary">Low</label>
+
+                <input type="radio" id="Medium" name="langlevel" value="1">
+                    <label class="text-muted" for="secondary">Medium</label>
+
+                <input type="radio" id="Hight" name="langlevel" value="2">
+                    <label class="text-muted" for="baccalaureate">Hight</label>
+
+                <input type="radio" id="Excelent" name="langlevel" value="3">
+                    <label class="text-muted" for="higher">Excelent</label>
+
                 <input type="submit" name="submit"> 
                 
                 <a class="forgot" href="login.php">Sing in</a>      

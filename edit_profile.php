@@ -78,7 +78,7 @@
                 <div class="card"> 
                     <form action="' . $_SERVER['PHP_SELF'] . '" method="POST" class="box">
                     <div class="form-group">
-                    <p class="text-muted"> '; if(isset( $e )){ echo $e;} echo ' </p> 
+                        <p class="text-muted"> '; if(isset( $e )){ echo $e;} echo ' </p> 
                     </div>
                         <div class="form-group">
                             <input type="text" name="user_username" value="' . $row['user_username'] . '"> 
@@ -95,13 +95,64 @@
                             <input type="text" name="city" value="' . $row['city'] . '"> 
                             <input type="text" name="degree" value="' . $row['degree'] . '">  
                         </div>
-                        <div class="form-group">
-                            <span class="text-muted">Education level  (0-9)</span>
-                            <input type="number" name="edulevel" value="' . $row['edulevel'] . '">
+                        <div class"form-group">
+                            <span class="text-muted">Education level:</span>
+                        </div>
+                        <div class="form-group radio-group">
+                            
+                                <input type="radio" id="primary" name="edulevel" value="0"';
+                                if($row['edulevel'] == 0) echo "checked " ;
+                                echo '>
+                                    <label class="text-muted" for="primary">Primary</label>
+
+                                <input type="radio" id="secondary" name="edulevel" value="1"';
+                                if($row['edulevel'] == 1) echo "checked" ;
+                            echo '>
+                                    <label class="text-muted" for="secondary">Secondary</label>
+
+                                <input type="radio" id="baccalaureate" name="edulevel" value="2"';
+                                if($row['edulevel'] == 2) echo "checked" ;
+                            echo '>
+                                    <label class="text-muted" for="baccalaureate">Baccalaureate</label>
+
+                                <input type="radio" id="higher" name="edulevel" value="3"';
+                                if($row['edulevel'] == 3) echo "checked" ;
+                            echo '>
+                                    <label class="text-muted" for="higher">Higher Vocational Training</label>
+
+                                <input type="radio" id="degree" name="edulevel" value="4"';
+                                if($row['edulevel'] == 4) echo "checked" ;
+                            echo '>
+                            <label class="text-muted" for="degree">Degree</label>
+                        </div>
+                        <div class="form-group">    
                             <span class="text-muted">Year</span> 
-                            <input type="number" name="year" value="' . $row['year'] . '">
+                            <input type="number" name="year" value="' . $row['year'] . '">  
+                        </div>
+                        <div class"form-group">
                             <span class="text-muted">English Level</span>
-                            <input type="number" name="langlevel" value="' . $row['status'] . '">  
+                        </div>
+                        <div class="form-group radio-group">
+                            
+                                <input type="radio" id="Low" name="langlevel" value="0" ';
+                                if($row['langlevel'] == 0) echo "checked" ;
+                            echo '>
+                                    <label class="text-muted" for="primary">Low</label>
+
+                                <input type="radio" id="Medium" name="langlevel" value="1" ';
+                                if($row['langlevel'] == 1) echo "checked" ;
+                            echo '>
+                                    <label class="text-muted" for="secondary">Medium</label>
+
+                                <input type="radio" id="Hight" name="langlevel" value="2"';
+                                if($row['langlevel'] == 2) echo "checked" ;
+                            echo '>
+                                    <label class="text-muted" for="baccalaureate">Hight</label>
+
+                                <input type="radio" id="Excelent" name="langlevel" value="3"';
+                                if($row['langlevel'] == 3) echo "checked" ;
+                            echo '>
+                                    <label class="text-muted" for="higher">Excelent</label>
                         </div>
                         <div class="form-group">
                             <input type="submit" name="submit"> 
