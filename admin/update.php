@@ -28,14 +28,6 @@
                     <span>Name:</span>
                     <span class"detailitem">'.$row['first_name'] .' '.$row['last_name'].'</span>
                 <div>';
-
-                <select name="edulevel" id="type" class="">
-                        <option value="0" <?php if($type == "Choose a type") echo "selected"; ?> > Choose a type </option>
-                        <option value="1" <?php if($type == "Running") echo "selected"; ?> > Running </option>
-                        <option value="2" <?php if($type == "Swimming") echo "selected"; ?> > Swimming </option>
-                        <option value="3" <?php if($type == "Cycling") echo "selected"; ?> > Cycling </option>
-                        <option value="4" <?php if($type == "Triathlon") echo "selected"; ?> > Triathlon </option>
-                    </select>
                     
                 echo $output;
         }
